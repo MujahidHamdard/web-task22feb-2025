@@ -1,0 +1,274 @@
+:root {
+    --text_color: white;
+    --bgc_btn: green;
+    --text_color_black: black;
+    --small_cirle_bgc: #F94D29;
+}
+
+.btn {
+    background-color: var(--bgc_btn);
+    color: var(--text_color);
+}
+
+.btn_we {
+    background-color: var(--text_color);
+    color: var(--text_color_black);
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding-bottom: 2rem;
+}
+
+.bg_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.nav_bar {
+    border-bottom: 1px solid var(--text_color);
+    padding-bottom: 5rem;
+
+}
+
+.navbar-brand {
+    color: var(--text_color);
+}
+
+.nav-link {
+    color: var(--text_color);
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.heading {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    color: var(--text_color);
+}
+
+.heading h1 {
+    font-size: clamp(1rem, 4vw, 5rem);
+    font-weight: bold;
+}
+
+.heading p {
+    font-size: clamp(1rem, 3vw, 2rem);
+
+}
+
+.heading a {
+    margin: 1rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: clamp(.3rem, 3vw, 1rem);
+}
+
+/* card_wrapper */
+.card_wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: var(--text_colors);
+}
+
+.card_wrapper figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card_wrapper figure::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text_color_black);
+    opacity: .7;
+}
+
+.card_wrapper figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left {
+    color: var(--text_color);
+}
+
+.left h2 {
+    padding: 2rem 0px;
+    font-size: clamp(1rem, 4vw, 4rem);
+}
+
+.left p {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.left ul {
+    list-style: none;
+    margin: 0px;
+    padding: .5rem 0px;
+}
+
+
+.right i {
+    color: var(--text_color);
+    font-size: clamp(1rem, 4vw, 5rem);
+    text-align: center;
+
+
+
+}
+
+.right .card {
+    background-color: transparent;
+    border: 1px solid green;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--text_color);
+    text-align: center;
+}
+
+/* card_bottom */
+.card_bottom {
+    background-color: var(--bgc_btn);
+    padding: 3rem 0px;
+    color: var(--text_color);
+}
+
+.card_bottom a {
+    background-color: var(--text_color_black);
+    color: var(--text_color);
+    text-decoration: none;
+    padding: .5rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+/* .last_section_heading */
+
+.last_section_heading {
+    padding: 2rem;
+    text-align: center;
+    font-size: ;
+
+}
+
+.last_section_heading h2 {
+    padding: 2rem;
+    text-align: center;
+    font-size: ;
+    font-size: clamp(1rem, 4vw, 5rem);
+}
+
+
+
+
+/* last_section_card */
+.last_section_card {
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.last_section_card h2 {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem auto;
+    font-size: clamp(3rem, 4vw, 5rem);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    border: 5px solid black;
+    border-radius: 50%;
+    line-height: 8rem;
+
+
+
+}
+
+.last_section_card h2::before {
+    position: absolute;
+    top: 1rem;
+    left: -.5rem;
+    width: clamp(1rem, 4vw, 1.5rem);
+    height: clamp(1rem, 4vw, 1.5rem);
+    content: '';
+    /* border: 5px solid blue; */
+    border-radius: 50%;
+    animation: example;
+    animation-duration: 10s;
+    background-color: var(--small_cirle_bgc);
+
+
+    z-index: -1;
+
+
+}
+
+.last_section_card h2::after {
+
+    position: absolute;
+    top: 5rem;
+    left: 6rem;
+    width: clamp(1rem, 4vw, 1.5rem);
+    height: clamp(1rem, 4vw, 1.5rem);
+    content: '';
+    /* border: 4px solid gray; */
+    border-radius: 50%;
+    animation: example;
+    animation-duration: ;
+    background-color: var(--small_cirle_bgc);
+    z-index: -1;
+
+
+
+
+}
+
+.last_section_card p {
+    padding-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:375px) {
+    .navbar {
+        background-color: lightblue!important;
+    }
+.nav_bar{
+    border-bottom: none;
+}
+
+}
