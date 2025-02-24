@@ -137,7 +137,7 @@
 
 .right i {
     color: var(--text_color);
-    font-size: clamp(1rem, 4vw, 5rem);
+    font-size: clamp(1.5rem, 4vw, 5rem);
     text-align: center;
 
 
@@ -153,6 +153,9 @@
     text-align: center;
 }
 
+.right .card:hover{
+    background-color: var(--small_cirle_bgc);
+}
 /* card_bottom */
 .card_bottom {
     background-color: var(--bgc_btn);
